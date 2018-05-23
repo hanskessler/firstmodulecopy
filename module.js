@@ -1,10 +1,5 @@
-var express = require('express');
-var app = express();
+function helloWorld() {
+  alert('Hello World!') ;
+}
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
-
-app.listen(3001, function () {
-  console.log('Example app listening on port 3001!');
-});
+module.exports = helloWorld;
